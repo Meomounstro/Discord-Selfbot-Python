@@ -1,6 +1,6 @@
 
 # 🔥 Pollo#3700
-![Logo]([https://github.com/200rengame/Discord-Selfbot-Python/blob/main/Assets/standard%20(2).gif)
+![Logo]([https://github.com/200rengame/Discord-Selfbot-Python/blob/main/Assets/banner.png?raw=true])
 
 📋: Es / Esta herramienta sirve para principalmente tener bajo control un selfbot en discord asi se puede tener acceso a diversas acciones que normalmente un usuario  de discord no pueda hacer
 
