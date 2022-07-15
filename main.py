@@ -1,17 +1,20 @@
-import os, requests, io, aiohttp, bs4
-import nmap, socket, sys, threading, concurrent.futures, requests, pprint, codecs, urllib3
-from bs4 import BeautifulSoup
-import discord
-import pyfiglet
-from datetime import *
-from discord.ext import commands
-from multiprocessing import context
-from discord import Color, message
-from discord.enums import Status
-from discord.utils import get
-from PIL import Image
-from io import BytesIO
-from colorama import Fore
+try:
+    import os, requests, io, aiohttp, bs4
+    import nmap, socket, sys, threading, concurrent.futures, requests, pprint, codecs, urllib3
+    from bs4 import BeautifulSoup
+    import discord
+    import pyfiglet
+    from datetime import *
+    from discord.ext import commands
+    from multiprocessing import context
+    from discord import Color, message
+    from discord.enums import Status
+    from discord.utils import get
+    from PIL import Image
+    from io import BytesIO
+    from colorama import Fore
+except ModuleNotFoundError:
+    print("[-] Modulo no encontrado porfavor instalar 'requirements.txt \n > pip install -r requirements.txt \n > pip3 install -r requirements.txt")
 
 
 
@@ -192,3 +195,4 @@ async def msgsniper(ctx, msgsniperlol=None):
         await ctx.send('Selfbot Message-Sniper is now **disabled**')
 
 client.run(token, bot=False)
+
