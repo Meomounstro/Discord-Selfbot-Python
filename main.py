@@ -22,7 +22,7 @@ except ModuleNotFoundError:
 
 os.system("cls")
 
-print((Fore.RED) + """
+print("""
     ╔╗╔╔═╗╔╦╗╔═╗╦ ╦╔╗╔╔╦╗╔═╗═╗ ╦
     ║║║║ ║ ║ ╚═╗╚╦╝║║║ ║ ╠═╣╔╩╦╝
     ╝╚╝╚═╝ ╩ ╚═╝ ╩ ╝╚╝ ╩ ╩ ╩╩ ╚═
