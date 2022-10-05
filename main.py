@@ -1,28 +1,25 @@
+import os, requests, io, aiohttp
+from bs4 import BeautifulSoup
+import discord
+import pyfiglet
+from datetime import *
+from discord.ext import commands
+from multiprocessing import context
+from discord import Color, message
+from discord.enums import Status
+from discord.utils import get
+from io import BytesIO
+from colorama import Fore
+
+
+
 try:
-    import os, requests, io, aiohttp, bs4
-    import nmap, socket, sys, threading, concurrent.futures, pprint, codecs, urllib3
-    from bs4 import BeautifulSoup
-    import discord
-    import pyfiglet
-    from datetime import *
-    from discord.ext import commands
-    from multiprocessing import context
-    from discord import Color, message
-    from discord.enums import Status
-    from discord.utils import get
-    from PIL import Image
-    from io import BytesIO
-    from colorama import Fore
-except ModuleNotFoundError:
     os.system("cls")
+except:
     os.system("clear")
-    print("[-] Modulo no encontrado porfavor instalar 'requirements.txt \n > pip install -r requirements.txt \n > pip3 install -r requirements.txt")
 
 
-
-os.system("cls")
-
-print("""
+print((Fore.RED) + """
     ╔╗╔╔═╗╔╦╗╔═╗╦ ╦╔╗╔╔╦╗╔═╗═╗ ╦
     ║║║║ ║ ║ ╚═╗╚╦╝║║║ ║ ╠═╣╔╩╦╝
     ╝╚╝╚═╝ ╩ ╚═╝ ╩ ╝╚╝ ╩ ╩ ╩╩ ╚═
@@ -34,7 +31,7 @@ print("""
 
 client = commands.Bot(command_prefix="..", self_bot=True, help_command=None)
 try:
-    token = "token"
+    token = "TOKEN"
 except:
     print("[-] No existe el token o no hay red")
 
@@ -92,6 +89,7 @@ async def commands(ctx):
 ~ [msgsniper] (value) | Ver mensajes borrados de miembros 
 
 ```""")
+    await ctx.send("> `Programado por Pollo#3700`")
     await ctx.send("https://cdn.discordapp.com/attachments/890295666457329684/994750721918509147/standard.gif")
 
 @client.command()
